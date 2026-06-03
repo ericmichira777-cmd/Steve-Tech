@@ -60,7 +60,7 @@ body {
     background:
         linear-gradient(rgba(0,0,0,0.6),
         rgba(0,0,0,.6)),
-        url("/Photos/steve0.jpg");
+        url("steve0.jpg");
     background-size: initial;
     background-repeat: no-repeat;
     background-position: center;
