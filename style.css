@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+    font-family: Georgia , Arial, sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #111827;
+    position : fixed;
+    width: 100%;
+    top: 0;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+/* HAMBURGER */
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-icon span {
+    width: 28px;
+    height: 3px;
+    background: white;
+}
+
+.nav-links {
+    display: none;
+}
+
+/* HERO */
+
+.hero {
+    height: 50em;
+    width: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background:
+        linear-gradient(rgba(0,0,0,0.6),
+        rgba(0,0,0,.6)),
+        url("/Photos/steve0.jpg");
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-content h1 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 30px;
+    background: #38bdf8;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    opacity: .8;
+}
+
+/* ABOUT */
+
+.about {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.about h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.9;
+}
+
+/* SERVICES */
+
+.services {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.services h2 {
+    color: #38bdf8;
+    margin-bottom: 40px;
+}
+
+.service-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.box {
+    background: #1f293b;
+    padding: 30px;
+    width: 300px;
+    border-radius: 16px;
+    box-shadow: 2px 3px 3px 2px #38bdf4;
+    transition-duration: 1s;
+}
+.box:hover{
+    box-shadow: 4px 5px 6px 4px #38bdf4;
+    width: 320px;
+}
+.pics{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.pic{
+    display: inline-block;
+   /* background-image: url('/Photos/steve3.jpg');*/
+    max-width: 80%;
+    height: 15em;
+    background-size: contain;
+    background-origin: padding-box;
+    margin:  auto;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.pic-two{
+    /*background-image: url('/Photos/steve2.jpg');*/
+    background-size: contain;
+    margin: 18px auto;
+    max-width: 80%;
+    height: 15em;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.pic-three{
+  /*  background-image: url('/Photos/steve1.jpg');*/
+    background-size: contain;
+    max-width: 90%;
+    height: 12em;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.pic , .pic-two, .pic-three{
+    box-shadow: 1px 2px 1px 1px #38bdf4;
+}
+
+.icon {
+    font-size: 50px;
+    color: #38bdf8;
+}
+
+.box h3 {
+    margin: 15px 0;
+}
+
+/* CONTACT */
+
+.contact {
+    padding: 70px 8%;
+}
+
+.contact h2 {
+    text-align: center;
+    color: #38bdf8;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+input,
+textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #1e293b;
+    color: white;
+    cursor: pointer;
+}
+input:focus, textarea{
+    outline-color: #38bdf9;
+}
+.emaa:invalid{
+    color: #b00;
+}
+.emaa:valid{
+    color: #0d0;
+}
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #38bdf8;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .8;
+}
+.social-icon{
+    text-decoration: none;
+    display: none;
+}
+.show-menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: #111827;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+    list-style: none;
+    box-shadow: 1px 2px 2px 1px  #38bdf8;
+    text-decoration: none;
+}
+.show-menu a{
+    text-decoration: none;
+    color: white;
+}
+.show-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: absolute;
+    top: 240px;
+    right: 20px;
+    background: #111827;
+    box-shadow: 1px 1px 1px 1px #38bdf7;
+    padding: 9px;
+    border-radius: 10px;
+    
+}
+footer{
+    background-color: black;
+    width: 100%;
+    text-align: center;
+}
+
+.social-icons a{
+    font-size: 1.1em;
+    color: #00fdff;
+    text-decoration: none;
+    justify-content: space-evenly;
+    margin: 14px
+}
+
+
+/* Responsive Design*/
+
+@media (min-width: 768px) {
+
+    .hero-content h1 {
+        font: 4rem Georgia;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav-links a:hover {
+        color: #38bdf8;
+    }
+    .pics{
+        display: flex;
+        flex-wrap: wrap;
+       /* height: 27em;*/
+    }
+}
