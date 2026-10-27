@@ -10,7 +10,6 @@ body {
     font-family: Georgia , Arial, sans-serif;
 }
 
-/* NAVBAR */
 
 .navbar {
     display: flex;
@@ -29,7 +28,6 @@ body {
     color: #38bdf8;
 }
 
-/* HAMBURGER */
 
 .menu-icon {
     display: flex;
@@ -47,7 +45,6 @@ body {
     display: none;
 }
 
-/* HERO */
 
 .hero {
     height: 50em;
@@ -109,7 +106,6 @@ body {
     line-height: 1.9;
 }
 
-/* SERVICES */
 
 .services {
     padding: 70px 8%;
@@ -190,7 +186,6 @@ body {
     margin: 15px 0;
 }
 
-/* CONTACT */
 
 .contact {
     padding: 70px 8%;
@@ -290,8 +285,6 @@ footer{
     margin: 14px
 }
 
-
-/* Responsive Design*/
 
 @media (min-width: 768px) {
 
